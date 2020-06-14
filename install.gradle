@@ -1,0 +1,39 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'io.github.rockbass2560'
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'io.github.rockbass2560'
+                artifactId 'imageprogress'
+                name 'imageprogress'
+                description 'Library to show loading progress using an image view'
+                url 'https://github.com/rockbass2560/ImageProgress'
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'rockbass2560'
+                        name 'Francisco Gonzalez Hernandez'
+                        email 'franciscogonzalez_hernandez@hotmail.com'
+                    }
+                }
+
+                scm {
+                    connection 'https://github.com/rockbass2560/ImageProgress.git'
+                    developerConnection 'https://github.com/rockbass2560/ImageProgress.git'
+                    url 'https://github.com/rockbass2560/ImageProgress'
+                }
+            }
+        }
+    }
+}

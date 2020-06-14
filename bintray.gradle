@@ -1,0 +1,33 @@
+apply plugin: 'com.jfrog.bintray'
+
+version = '1.0.0'
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+
+// Bintray
+bintray {
+    user = localProperties.getProperty("bintray.user")
+    key = localProperties.getProperty("bintray.apikey")
+
+    pkg {
+        repo = 'imageprogress'
+        name = 'io.github.rockbass2560'
+        configurations = ['archives']
+        desc = 'Library to show loading progress using an image view'
+        websiteUrl = 'https://github.com/rockbass2560/ImageProgress'
+        vcsUrl = 'https://github.com/rockbass2560/ImageProgress.git'
+        licenses = ["Apache-2.0"]
+        publish = true
+        publicDownloadNumbers = true
+    }
+}
