@@ -1,4 +1,4 @@
-package com.rockbass.imageprogress
+package io.github.rockbass2560.imageprogress
 
 import org.junit.Test
 

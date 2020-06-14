@@ -1,12 +1,10 @@
-package com.rockbass.imageprogress
+package io.github.rockbass2560.imageprogress
 
 import android.content.Context
 import android.graphics.*
 import android.graphics.drawable.BitmapDrawable
-import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatImageView
-import androidx.core.graphics.drawable.toDrawable
 import kotlinx.coroutines.*
 import kotlin.math.roundToInt
 
