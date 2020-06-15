@@ -16,8 +16,8 @@ implementation 'io.github.rockbass2560:imageprogress:1.0.1'
 
 You can add the view in your layout.xml, the attribute value needs to be a value between 0 and 100 (percent value of the image view)
 
-![First Example](screenshots/first_example.png)
+![First Example](screenshots/example1.png)
 
 To change the value you can modify value property and the image will paint color part automatically
 
-![Second Example](screenshots/second_example.png)
+![Second Example](screenshots/example2.png)
