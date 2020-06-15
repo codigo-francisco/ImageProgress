@@ -7,7 +7,7 @@ ImageView with 15% of progress
 Same image with 75% of progress  
 <img src="screenshots/second.png" width="50%" height="600" />
 
-## Instalation
+## Installation
 You need to add this line in your build.gradle
 
 implementation 'io.github.rockbass2560:imageprogress:1.0.0'
