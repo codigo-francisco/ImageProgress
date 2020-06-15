@@ -1,15 +1,6 @@
 apply plugin: 'com.jfrog.bintray'
 
-version = '1.0.0'
-
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
-}
-
-artifacts {
-    archives sourcesJar
-}
+version = '1.0.1'
 
 def localProperties = new Properties()
 localProperties.load(new FileInputStream(rootProject.file("local.properties")))
@@ -18,7 +9,7 @@ localProperties.load(new FileInputStream(rootProject.file("local.properties")))
 bintray {
     user = localProperties.getProperty("bintray.user")
     key = localProperties.getProperty("bintray.apikey")
-
+    publications = ['imageprogress']
     pkg {
         repo = 'imageprogress'
         name = 'io.github.rockbass2560'

@@ -10,7 +10,7 @@ Same image with 75% of progress
 ## Instalation
 You need to add this line in your build.gradle
 
-implementation 'io.github.rockbass2560:imageprogress:1.0.0'
+implementation 'io.github.rockbass2560:imageprogress:1.0.1'
 
 ## Example of use
 
